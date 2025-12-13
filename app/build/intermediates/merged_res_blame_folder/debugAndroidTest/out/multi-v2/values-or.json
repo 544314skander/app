@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.droid.test.app-mergeDebugAndroidTestResources-32:/values-or/values-or.xml",
+            "outputFile": "com.example.cat.test.app-mergeDebugAndroidTestResources-32:/values-or/values-or.xml",
             "map": [
                 {
                     "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\86dc199c9037b51c74998b05f14def17\\transformed\\ui-release\\res\\values-or\\values-or.xml",

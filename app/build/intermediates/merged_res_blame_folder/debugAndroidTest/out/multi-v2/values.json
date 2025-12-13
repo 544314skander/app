@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.droid.test.app-mergeDebugAndroidTestResources-32:/values/values.xml",
+            "outputFile": "com.example.cat.test.app-mergeDebugAndroidTestResources-32:/values/values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\f5b1c3662094aabe021d40163d3cb917\\transformed\\customview-poolingcontainer-1.0.0\\res\\values\\values.xml",

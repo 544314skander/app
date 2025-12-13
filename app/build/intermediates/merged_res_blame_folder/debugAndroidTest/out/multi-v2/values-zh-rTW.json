@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.droid.test.app-mergeDebugAndroidTestResources-32:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.example.cat.test.app-mergeDebugAndroidTestResources-32:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\ad886fd15310d3c6688ef75653a5e276\\transformed\\core-1.13.0\\res\\values-zh-rTW\\values-zh-rTW.xml",

@@ -4,7 +4,7 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.example.droid.test",
+  "applicationId": "com.example.cat.test",
   "variantName": "debugAndroidTest",
   "elements": [
     {
