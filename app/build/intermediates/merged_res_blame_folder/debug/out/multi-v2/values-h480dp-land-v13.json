@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.droid.app-mergeDebugResources-63:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.example.cat.app-mergeDebugResources-63:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\9839218ac57b085a267b2ee4220cab92\\transformed\\material-1.12.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",

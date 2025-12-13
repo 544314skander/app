@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.droid.app-mergeDebugResources-63:/values-hi/values-hi.xml",
+            "outputFile": "com.example.cat.app-mergeDebugResources-63:/values-hi/values-hi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\ad886fd15310d3c6688ef75653a5e276\\transformed\\core-1.13.0\\res\\values-hi\\values-hi.xml",

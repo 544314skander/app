@@ -16,5 +16,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DroidCompose"
+rootProject.name = "CatsCompose"
 include(":app")
