@@ -67,7 +67,8 @@ fun ToolsScreen(onBack: () -> Unit) {
     var hasLocationPermission by remember { mutableStateOf(false) }
     var hasCameraPermission by remember { mutableStateOf(false) }
     var lastLocation by remember { mutableStateOf<Location?>(null) }
-    var statusMessage by remember { mutableStateOf("Permissions not requested yet") }
+    var permissionStatus by remember { mutableStateOf("Permissions not requested yet") }
+    var locationStatus by remember { mutableStateOf("No location yet") }
 
     val permissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestMultiplePermissions()
@@ -75,7 +76,7 @@ fun ToolsScreen(onBack: () -> Unit) {
         hasLocationPermission = permissions[Manifest.permission.ACCESS_FINE_LOCATION] == true ||
             permissions[Manifest.permission.ACCESS_COARSE_LOCATION] == true
         hasCameraPermission = permissions[Manifest.permission.CAMERA] == true
-        statusMessage = "Location: ${if (hasLocationPermission) "granted" else "missing"}, Camera: ${if (hasCameraPermission) "granted" else "missing"}"
+        permissionStatus = "Location: ${if (hasLocationPermission) "granted" else "missing"}, Camera: ${if (hasCameraPermission) "granted" else "missing"}"
     }
 
     LaunchedEffect(Unit) {
@@ -90,9 +91,10 @@ fun ToolsScreen(onBack: () -> Unit) {
 
     fun requestLocationUpdate() {
         if (!hasLocationPermission) {
-            statusMessage = "Location permission required"
+            locationStatus = "Location permission required"
             return
         }
+        locationStatus = "Fetching location..."
         scope.launch {
             runCatching {
                 val token = com.google.android.gms.tasks.CancellationTokenSource()
@@ -100,16 +102,16 @@ fun ToolsScreen(onBack: () -> Unit) {
                     Priority.PRIORITY_BALANCED_POWER_ACCURACY,
                     token.token
                 ).addOnSuccessListener { location ->
-                    lastLocation = location
-                    statusMessage = if (location != null) {
-                        "Lat: ${location.latitude.format(5)}, Lng: ${location.longitude.format(5)}"
-                    } else {
-                        "No location found"
+                    if (location == null) {
+                        locationStatus = "No location from provider (set emulator location or enable GPS)."
+                        return@addOnSuccessListener
                     }
+                    lastLocation = location
+                    locationStatus = "Lat: ${location.latitude.format(5)}, Lng: ${location.longitude.format(5)}"
                 }.addOnFailureListener {
-                    statusMessage = "Location error: ${it.message}"
+                    locationStatus = "Location error: ${it.message}"
                 }
-            }.onFailure { statusMessage = "Location error: ${it.message}" }
+            }.onFailure { locationStatus = "Location error: ${it.message}" }
         }
     }
 
@@ -146,7 +148,7 @@ fun ToolsScreen(onBack: () -> Unit) {
                     verticalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
                     Text("Permissions", style = MaterialTheme.typography.titleMedium)
-                    Text(statusMessage, style = MaterialTheme.typography.bodyMedium)
+                    Text(permissionStatus, style = MaterialTheme.typography.bodyMedium)
                     Button(onClick = {
                         permissionLauncher.launch(
                             arrayOf(
@@ -173,7 +175,7 @@ fun ToolsScreen(onBack: () -> Unit) {
                         Text("Fetch location")
                     }
                     Text(
-                        text = statusMessage,
+                        text = locationStatus,
                         style = MaterialTheme.typography.bodyMedium
                     )
                     MapPreview(geoPoint = lastLocation?.let { GeoPoint(it.latitude, it.longitude) })
