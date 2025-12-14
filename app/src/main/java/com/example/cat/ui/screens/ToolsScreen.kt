@@ -5,6 +5,8 @@ import android.location.Location
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.CameraSelector
+import androidx.camera.core.ImageCapture
+import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
@@ -55,6 +57,9 @@ import kotlinx.coroutines.launch
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
+import java.io.File
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -69,6 +74,8 @@ fun ToolsScreen(onBack: () -> Unit) {
     var lastLocation by remember { mutableStateOf<Location?>(null) }
     var permissionStatus by remember { mutableStateOf("Permissions not requested yet") }
     var locationStatus by remember { mutableStateOf("No location yet") }
+    var photoStatus by remember { mutableStateOf("No photo captured yet") }
+    val imageCaptureState = remember { mutableStateOf<ImageCapture?>(null) }
 
     val permissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestMultiplePermissions()
@@ -103,7 +110,17 @@ fun ToolsScreen(onBack: () -> Unit) {
                     token.token
                 ).addOnSuccessListener { location ->
                     if (location == null) {
-                        locationStatus = "No location from provider (set emulator location or enable GPS)."
+                        // Fallback to last known location
+                        fusedClient.lastLocation.addOnSuccessListener { lastKnown ->
+                            if (lastKnown != null) {
+                                lastLocation = lastKnown
+                                locationStatus = "Last known - Lat: ${lastKnown.latitude.format(5)}, Lng: ${lastKnown.longitude.format(5)}"
+                            } else {
+                                locationStatus = "No location from provider (set emulator location or enable GPS)."
+                            }
+                        }.addOnFailureListener {
+                            locationStatus = "No location from provider (set emulator location or enable GPS)."
+                        }
                         return@addOnSuccessListener
                     }
                     lastLocation = location
@@ -113,6 +130,38 @@ fun ToolsScreen(onBack: () -> Unit) {
                 }
             }.onFailure { locationStatus = "Location error: ${it.message}" }
         }
+    }
+
+    fun capturePhoto() {
+        val imageCapture = imageCaptureState.value
+        if (!hasCameraPermission) {
+            photoStatus = "Camera permission required"
+            return
+        }
+        if (imageCapture == null) {
+            photoStatus = "Camera not ready yet"
+            return
+        }
+        val photoFile = File.createTempFile(
+            "cat_photo_",
+            ".jpg",
+            context.cacheDir
+        )
+        val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
+        imageCapture.takePicture(
+            outputOptions,
+            ContextCompat.getMainExecutor(context),
+            object : ImageCapture.OnImageSavedCallback {
+                override fun onError(exception: ImageCaptureException) {
+                    photoStatus = "Capture failed: ${exception.message}"
+                }
+
+                override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
+                    val path = outputFileResults.savedUri?.toString() ?: photoFile.absolutePath
+                    photoStatus = "Saved photo: $path"
+                }
+            }
+        )
     }
 
     Scaffold(
@@ -191,7 +240,16 @@ fun ToolsScreen(onBack: () -> Unit) {
                 ) {
                     Text("CameraX Preview", style = MaterialTheme.typography.titleMedium)
                     if (hasCameraPermission) {
-                        CameraPreview(lifecycleOwner = lifecycleOwner)
+                        CameraPreview(
+                            lifecycleOwner = lifecycleOwner,
+                            onReady = { imageCapture -> imageCaptureState.value = imageCapture }
+                        )
+                        Button(onClick = { capturePhoto() }) {
+                            Icon(imageVector = Icons.Rounded.CameraAlt, contentDescription = null)
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Text("Take photo")
+                        }
+                        Text(photoStatus, style = MaterialTheme.typography.bodyMedium)
                     } else {
                         Text("Camera permission required to start preview.")
                     }
@@ -234,7 +292,10 @@ private fun MapPreview(geoPoint: GeoPoint?) {
 }
 
 @Composable
-private fun CameraPreview(lifecycleOwner: androidx.lifecycle.LifecycleOwner) {
+private fun CameraPreview(
+    lifecycleOwner: androidx.lifecycle.LifecycleOwner,
+    onReady: (ImageCapture) -> Unit
+) {
     val context = LocalContext.current
     AndroidView(
         factory = { ctx ->
@@ -251,12 +312,16 @@ private fun CameraPreview(lifecycleOwner: androidx.lifecycle.LifecycleOwner) {
             val cameraProviderFuture = ProcessCameraProvider.getInstance(context)
             cameraProviderFuture.addListener({
                 val cameraProvider = cameraProviderFuture.get()
+                val imageCapture = ImageCapture.Builder()
+                    .setTargetRotation(previewView.display?.rotation ?: 0)
+                    .build()
                 val preview = Preview.Builder().build().also {
                     it.setSurfaceProvider(previewView.surfaceProvider)
                 }
                 val selector = CameraSelector.DEFAULT_BACK_CAMERA
                 cameraProvider.unbindAll()
-                cameraProvider.bindToLifecycle(lifecycleOwner, selector, preview)
+                cameraProvider.bindToLifecycle(lifecycleOwner, selector, preview, imageCapture)
+                onReady(imageCapture)
             }, ContextCompat.getMainExecutor(context))
         }
     )
