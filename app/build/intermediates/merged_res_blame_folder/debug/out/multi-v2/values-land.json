@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.cat.app-mergeDebugResources-63:/values-land/values-land.xml",
+            "outputFile": "com.example.cat.app-mergeDebugResources-71:/values-land/values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\66e3130b29697fe51ffc32441df6b5a0\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",

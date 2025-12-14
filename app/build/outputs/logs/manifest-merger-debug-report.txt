@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:2:1-28:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7cc9658886293857b565200c5f6f7712\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\216978485a7035d38a3ca594e71f1f04\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7058fe474ad15d8276fb522b5a77c6dc\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
@@ -29,26 +29,35 @@ MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.6] C:\Users\skan
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f36d67ec8557ef72bd2e0531264cf24d\transformed\ui-tooling-release\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.compose.ui:ui-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\86dc199c9037b51c74998b05f14def17\transformed\ui-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.camera:camera-video:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\2862cbb1f664e69ce1f0b4e64fdb5411\transformed\camera-video-1.3.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-lifecycle:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\edecdfe61e78c6cae80437abc8f300fa\transformed\camera-lifecycle-1.3.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-core:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\04f092c427fbc05b4cd2e551c25afe0c\transformed\camera-core-1.3.1\AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.camera:camera-view:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\b7307c360cdd4dae94e8c855bcfaf615\transformed\camera-view-1.3.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\6c069e295a745a778ef9278371395fdf\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\2fb0d7d338ed6b0972e491abade553ae\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\66e3130b29697fe51ffc32441df6b5a0\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7898d60de39645aa5edb077ecd269ae1\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:21.2.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\87fe0f43ee3e03a146a5ba600805f038\transformed\play-services-location-21.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0b5dc3a0df4f01c7733765472a756225\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\e6fc1a12ec3136b5d8e362e2ff0d4feb\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\1dd712384a42c4ef618905652d452fbe\transformed\activity-1.9.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\586bccf2926fc45b926511c6614076ed\transformed\activity-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f69360753b9bc9a6865ecde9b552d14d\transformed\activity-compose-1.9.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0ba6464c99b0fa1d3bccc74bbdb0ab4d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\1cbf90389578f0e82bcad1e9180f0435\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.5.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7ab2a397c822fe31ee036f33a7d29a46\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\621255e4a1d2ef021bb3fad26a16bffe\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\814bae2d0de7bcaf1ea977fb729b2332\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\5579ff72f7362a4d5c2cdd6001f0fb60\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\3383919050d2c638cfaa819a41e4aff2\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\38f1a64699420e97d495f0e72d2473e0\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\288a4d0a0bc4ba93261d5615b8ba1653\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7b84736e0057aeae3536d2be544ed660\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7ab2a397c822fe31ee036f33a7d29a46\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\621255e4a1d2ef021bb3fad26a16bffe\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\814bae2d0de7bcaf1ea977fb729b2332\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\5579ff72f7362a4d5c2cdd6001f0fb60\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\288a4d0a0bc4ba93261d5615b8ba1653\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0ba6464c99b0fa1d3bccc74bbdb0ab4d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\1cbf90389578f0e82bcad1e9180f0435\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\eedfab8d6d93da4a113ddbfb600b776c\transformed\lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\a0fd66cbb69606166fffdabbcc9988a0\transformed\lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\068a4066ac1f90048348a1cf29535a82\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:17:1-22:12
@@ -71,6 +80,7 @@ MERGED from [androidx.compose.runtime:runtime-android:1.6.6] C:\Users\skand\.gra
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\d66cbe6792bf46b08673a797ee6a6e68\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\2fa249abcdadef1a78917a8fb172780d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\61a690aabc9f9de347f230eac24c362b\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\fae3824a1011997748cf8632c6294951\transformed\exifinterface-1.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\11ecdf870642f9de7bc29ce3aaf9c314\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\3b69c40757b50ff0bf71396354a9a26e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
@@ -80,6 +90,7 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\skand\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\035765e67b7b3cbc5cb1846c5e6d2518\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7c353261644ced09438ba30503f16470\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\636906771aeb77e11dd982774b2ba4e3\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:2:1-27:12
 	package
 		INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -88,17 +99,49 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\skand\.gradle\ca
 		INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:4:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:5:22-78
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:6:22-62
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:8:22-76
 application
-ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:4:5-20:19
-INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:4:5-20:19
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:10:5-26:19
+INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:10:5-26:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\9839218ac57b085a267b2ee4220cab92\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\9839218ac57b085a267b2ee4220cab92\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f36d67ec8557ef72bd2e0531264cf24d\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f36d67ec8557ef72bd2e0531264cf24d\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\04f092c427fbc05b4cd2e551c25afe0c\transformed\camera-core-1.3.1\AndroidManifest.xml:23:5-34:19
+MERGED from [androidx.camera:camera-core:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\04f092c427fbc05b4cd2e551c25afe0c\transformed\camera-core-1.3.1\AndroidManifest.xml:23:5-34:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\6c069e295a745a778ef9278371395fdf\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\6c069e295a745a778ef9278371395fdf\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:21.2.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\87fe0f43ee3e03a146a5ba600805f038\transformed\play-services-location-21.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.2.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\87fe0f43ee3e03a146a5ba600805f038\transformed\play-services-location-21.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0b5dc3a0df4f01c7733765472a756225\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0b5dc3a0df4f01c7733765472a756225\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
@@ -116,33 +159,33 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\skand\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:7:9-41
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:5:9-35
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:10:9-49
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:16:9-49
 activity#com.example.cat.MainActivity
-ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:11:9-19:20
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:17:9-25:20
 	android:exported
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:13:13-36
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:19:13-36
 	android:name
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:12:13-41
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:18:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:23:27-74
 uses-sdk
 INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml
@@ -197,6 +240,16 @@ MERGED from [androidx.compose.ui:ui-android:1.6.6] C:\Users\skand\.gradle\caches
 MERGED from [androidx.compose.ui:ui-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\86dc199c9037b51c74998b05f14def17\transformed\ui-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.camera:camera-video:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\2862cbb1f664e69ce1f0b4e64fdb5411\transformed\camera-video-1.3.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-video:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\2862cbb1f664e69ce1f0b4e64fdb5411\transformed\camera-video-1.3.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\edecdfe61e78c6cae80437abc8f300fa\transformed\camera-lifecycle-1.3.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-lifecycle:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\edecdfe61e78c6cae80437abc8f300fa\transformed\camera-lifecycle-1.3.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\04f092c427fbc05b4cd2e551c25afe0c\transformed\camera-core-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-core:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\04f092c427fbc05b4cd2e551c25afe0c\transformed\camera-core-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.camera:camera-view:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\b7307c360cdd4dae94e8c855bcfaf615\transformed\camera-view-1.3.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.camera:camera-view:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\b7307c360cdd4dae94e8c855bcfaf615\transformed\camera-view-1.3.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\6c069e295a745a778ef9278371395fdf\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\6c069e295a745a778ef9278371395fdf\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\2fb0d7d338ed6b0972e491abade553ae\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
@@ -205,6 +258,14 @@ MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\skand\.gradle\caches\9
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\66e3130b29697fe51ffc32441df6b5a0\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7898d60de39645aa5edb077ecd269ae1\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7898d60de39645aa5edb077ecd269ae1\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:21.2.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\87fe0f43ee3e03a146a5ba600805f038\transformed\play-services-location-21.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.2.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\87fe0f43ee3e03a146a5ba600805f038\transformed\play-services-location-21.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0b5dc3a0df4f01c7733765472a756225\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0b5dc3a0df4f01c7733765472a756225\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\e6fc1a12ec3136b5d8e362e2ff0d4feb\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\e6fc1a12ec3136b5d8e362e2ff0d4feb\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\1dd712384a42c4ef618905652d452fbe\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
@@ -213,18 +274,6 @@ MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\skand\.gradle\caches
 MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\586bccf2926fc45b926511c6614076ed\transformed\activity-ktx-1.9.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f69360753b9bc9a6865ecde9b552d14d\transformed\activity-compose-1.9.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f69360753b9bc9a6865ecde9b552d14d\transformed\activity-compose-1.9.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0ba6464c99b0fa1d3bccc74bbdb0ab4d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0ba6464c99b0fa1d3bccc74bbdb0ab4d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\1cbf90389578f0e82bcad1e9180f0435\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\1cbf90389578f0e82bcad1e9180f0435\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.5.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7ab2a397c822fe31ee036f33a7d29a46\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.transition:transition:1.5.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7ab2a397c822fe31ee036f33a7d29a46\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\621255e4a1d2ef021bb3fad26a16bffe\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\621255e4a1d2ef021bb3fad26a16bffe\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\814bae2d0de7bcaf1ea977fb729b2332\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\814bae2d0de7bcaf1ea977fb729b2332\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\5579ff72f7362a4d5c2cdd6001f0fb60\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\5579ff72f7362a4d5c2cdd6001f0fb60\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\3383919050d2c638cfaa819a41e4aff2\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\3383919050d2c638cfaa819a41e4aff2\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
@@ -233,10 +282,22 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\38f1a64699420e97d495f0e72d2473e0\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\38f1a64699420e97d495f0e72d2473e0\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\288a4d0a0bc4ba93261d5615b8ba1653\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\288a4d0a0bc4ba93261d5615b8ba1653\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7b84736e0057aeae3536d2be544ed660\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7b84736e0057aeae3536d2be544ed660\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7ab2a397c822fe31ee036f33a7d29a46\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7ab2a397c822fe31ee036f33a7d29a46\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\621255e4a1d2ef021bb3fad26a16bffe\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\621255e4a1d2ef021bb3fad26a16bffe\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\814bae2d0de7bcaf1ea977fb729b2332\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\814bae2d0de7bcaf1ea977fb729b2332\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\5579ff72f7362a4d5c2cdd6001f0fb60\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\5579ff72f7362a4d5c2cdd6001f0fb60\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\288a4d0a0bc4ba93261d5615b8ba1653\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\288a4d0a0bc4ba93261d5615b8ba1653\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0ba6464c99b0fa1d3bccc74bbdb0ab4d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\0ba6464c99b0fa1d3bccc74bbdb0ab4d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\1cbf90389578f0e82bcad1e9180f0435\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\1cbf90389578f0e82bcad1e9180f0435\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\eedfab8d6d93da4a113ddbfb600b776c\transformed\lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\eedfab8d6d93da4a113ddbfb600b776c\transformed\lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\a0fd66cbb69606166fffdabbcc9988a0\transformed\lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:5:5-44
@@ -281,6 +342,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sk
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\2fa249abcdadef1a78917a8fb172780d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\61a690aabc9f9de347f230eac24c362b\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\61a690aabc9f9de347f230eac24c362b\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\fae3824a1011997748cf8632c6294951\transformed\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\fae3824a1011997748cf8632c6294951\transformed\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\11ecdf870642f9de7bc29ce3aaf9c314\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\11ecdf870642f9de7bc29ce3aaf9c314\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\3b69c40757b50ff0bf71396354a9a26e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -299,6 +362,8 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\skand\.gradle\caches\9.0-miles
 MERGED from [androidx.print:print:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\7c353261644ced09438ba30503f16470\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\636906771aeb77e11dd982774b2ba4e3\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\636906771aeb77e11dd982774b2ba4e3\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:5:5-7:41
+MERGED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:5:5-7:41
 	android:targetSdkVersion
 		INJECTED from C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
@@ -315,6 +380,40 @@ ADDED from [androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\c
 		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:25:13-36
 	android:name
 		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:24:13-63
+service#androidx.camera.core.impl.MetadataHolderService
+ADDED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:24:9-33:19
+MERGED from [androidx.camera:camera-core:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\04f092c427fbc05b4cd2e551c25afe0c\transformed\camera-core-1.3.1\AndroidManifest.xml:29:9-33:78
+MERGED from [androidx.camera:camera-core:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\04f092c427fbc05b4cd2e551c25afe0c\transformed\camera-core-1.3.1\AndroidManifest.xml:29:9-33:78
+	tools:node
+		ADDED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:29:13-31
+	android:enabled
+		ADDED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:26:13-36
+	android:exported
+		ADDED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:28:13-75
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:25:13-75
+meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+ADDED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:30:13-32:89
+	android:value
+		ADDED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:32:17-86
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:31:17-103
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
@@ -405,3 +504,35 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+supports-screens
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:9:5-12:40
+	android:largeScreens
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:11:9-36
+	android:normalScreens
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:12:9-37
+	android:anyDensity
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:10:9-34
+uses-feature#android.hardware.location.network
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:15:9-57
+uses-feature#android.hardware.location.gps
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:17:5-19:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:18:9-53
+uses-feature#android.hardware.telephony
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:20:5-22:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:22:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:21:9-50
+uses-feature#android.hardware.wifi
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:23:5-25:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:25:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:24:9-45

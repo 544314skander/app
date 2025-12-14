@@ -10,6 +10,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.cat.ui.screens.DetailScreen
 import com.example.cat.ui.screens.HomeScreen
+import com.example.cat.ui.screens.ToolsScreen
 
 @Composable
 fun CatApp(viewModel: CatViewModel) {
@@ -24,6 +25,7 @@ fun CatApp(viewModel: CatViewModel) {
             HomeScreen(
                 state = uiState,
                 onCatSelected = { id -> navController.navigate("details/$id") },
+                onOpenTools = { navController.navigate("tools") },
                 onToggleFavorite = viewModel::toggleFavorite,
                 onToggleFilter = viewModel::toggleFavoritesFilter
             )
@@ -46,10 +48,15 @@ fun CatApp(viewModel: CatViewModel) {
                 HomeScreen(
                     state = uiState,
                     onCatSelected = { next -> navController.navigate("details/$next") },
+                    onOpenTools = { navController.navigate("tools") },
                     onToggleFavorite = viewModel::toggleFavorite,
                     onToggleFilter = viewModel::toggleFavoritesFilter
                 )
             }
+        }
+
+        composable("tools") {
+            ToolsScreen(onBack = { navController.popBackStack() })
         }
     }
 }

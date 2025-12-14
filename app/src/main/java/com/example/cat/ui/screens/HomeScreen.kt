@@ -25,6 +25,7 @@ import androidx.compose.material.icons.outlined.FilterAlt
 import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material.icons.outlined.StarBorder
 import androidx.compose.material.icons.rounded.RocketLaunch
+import androidx.compose.material.icons.rounded.Map
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -55,6 +56,7 @@ import com.example.cat.ui.theme.Teal
 fun HomeScreen(
     state: CatUiState,
     onCatSelected: (Int) -> Unit,
+    onOpenTools: () -> Unit,
     onToggleFavorite: (Int) -> Unit,
     onToggleFilter: () -> Unit
 ) {
@@ -66,6 +68,12 @@ fun HomeScreen(
             CenterAlignedTopAppBar(
                 title = { Text(text = "Cat Lounge") },
                 actions = {
+                    IconButton(onClick = onOpenTools) {
+                        Icon(
+                            imageVector = Icons.Rounded.Map,
+                            contentDescription = "Open tools"
+                        )
+                    }
                     IconButton(onClick = onToggleFilter) {
                         Icon(
                             imageVector = Icons.Outlined.FilterAlt,

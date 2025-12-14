@@ -8,131 +8,212 @@
 8        android:minSdkVersion="26"
 9        android:targetSdkVersion="34" />
 10
-11    <permission
-11-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.cat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.example.cat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:4:5-79
+11-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:5:5-81
+12-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:5:22-78
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:6:5-65
+13-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:6:22-62
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:7:5-67
+14-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:7:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:8:5-79
+15-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:8:22-76
 16
-17    <application
-17-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:4:5-20:19
-18        android:allowBackup="true"
-18-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:5:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
-20        android:debuggable="true"
-21        android:extractNativeLibs="false"
-22        android:icon="@mipmap/ic_launcher"
-22-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:6:9-43
-23        android:label="@string/app_name"
-23-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:7:9-41
-24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:8:9-54
-25        android:supportsRtl="true"
-25-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:9:9-35
-26        android:testOnly="true"
-27        android:theme="@style/Theme.CatsCompose" >
-27-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:10:9-49
-28        <activity
-28-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:11:9-19:20
-29            android:name="com.example.cat.MainActivity"
-29-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:12:13-41
-30            android:exported="true" >
-30-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:13:13-36
-31            <intent-filter>
-31-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:14:13-18:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:15:17-69
-32-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:15:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:17:17-77
-34-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:17:27-74
-35            </intent-filter>
-36        </activity>
-37        <activity
-37-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f36d67ec8557ef72bd2e0531264cf24d\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-38            android:name="androidx.compose.ui.tooling.PreviewActivity"
-38-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f36d67ec8557ef72bd2e0531264cf24d\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-39            android:exported="true" />
-39-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f36d67ec8557ef72bd2e0531264cf24d\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-40        <activity
-40-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:23:9-25:39
-41            android:name="androidx.activity.ComponentActivity"
-41-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:24:13-63
-42            android:exported="true" />
-42-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:25:13-36
-43
-44        <provider
-44-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-45            android:name="androidx.startup.InitializationProvider"
-45-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-46            android:authorities="com.example.cat.androidx-startup"
-46-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-47            android:exported="false" >
-47-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-48            <meta-data
-48-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-49-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-50                android:value="androidx.startup" />
-50-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-51            <meta-data
-51-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-52-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-53                android:value="androidx.startup" />
-53-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-54            <meta-data
-54-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-55                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-55-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-56                android:value="androidx.startup" />
-56-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-57        </provider>
-58
-59        <receiver
-59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-60            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-60-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-61            android:directBootAware="false"
-61-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-62            android:enabled="true"
-62-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-63            android:exported="true"
-63-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-64            android:permission="android.permission.DUMP" >
-64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-65            <intent-filter>
-65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-66                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-67            </intent-filter>
-68            <intent-filter>
-68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-69                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-70            </intent-filter>
-71            <intent-filter>
-71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-72                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-73            </intent-filter>
-74            <intent-filter>
-74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-75                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-76            </intent-filter>
-77        </receiver>
-78    </application>
-79
-80</manifest>
+17    <permission
+17-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+18        android:name="com.example.cat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.example.cat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+22
+23    <supports-screens
+23-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:9:5-12:40
+24        android:anyDensity="true"
+24-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:10:9-34
+25        android:largeScreens="true"
+25-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:11:9-36
+26        android:normalScreens="true" />
+26-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:12:9-37
+27
+28    <uses-feature
+28-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:14:5-16:36
+29        android:name="android.hardware.location.network"
+29-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:15:9-57
+30        android:required="false" />
+30-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:16:9-33
+31    <uses-feature
+31-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:17:5-19:36
+32        android:name="android.hardware.location.gps"
+32-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:18:9-53
+33        android:required="false" />
+33-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:19:9-33
+34    <uses-feature
+34-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:20:5-22:36
+35        android:name="android.hardware.telephony"
+35-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:21:9-50
+36        android:required="false" />
+36-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:22:9-33
+37    <uses-feature
+37-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:23:5-25:36
+38        android:name="android.hardware.wifi"
+38-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:24:9-45
+39        android:required="false" />
+39-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\598abe67155c08d97ecb60468da8cdf9\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:25:9-33
+40
+41    <application
+41-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:10:5-26:19
+42        android:allowBackup="true"
+42-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:11:9-35
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.13.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\ad886fd15310d3c6688ef75653a5e276\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+44        android:debuggable="true"
+45        android:extractNativeLibs="false"
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:12:9-43
+47        android:label="@string/app_name"
+47-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:13:9-41
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:14:9-54
+49        android:supportsRtl="true"
+49-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:15:9-35
+50        android:theme="@style/Theme.CatsCompose" >
+50-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:16:9-49
+51        <activity
+51-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:17:9-25:20
+52            android:name="com.example.cat.MainActivity"
+52-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:18:13-41
+53            android:exported="true" >
+53-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:19:13-36
+54            <intent-filter>
+54-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:20:13-24:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:21:17-69
+55-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:21:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:23:17-77
+57-->C:\Users\skand\Documents\GitHub\app\app\src\main\AndroidManifest.xml:23:27-74
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f36d67ec8557ef72bd2e0531264cf24d\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+61            android:name="androidx.compose.ui.tooling.PreviewActivity"
+61-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f36d67ec8557ef72bd2e0531264cf24d\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+62            android:exported="true" />
+62-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\f36d67ec8557ef72bd2e0531264cf24d\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+63        <activity
+63-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:23:9-25:39
+64            android:name="androidx.activity.ComponentActivity"
+64-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:24:13-63
+65            android:exported="true" />
+65-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\c95ea87d061efd386103f4bbe95c211a\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:25:13-36
+66
+67        <service
+67-->[androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:24:9-33:19
+68            android:name="androidx.camera.core.impl.MetadataHolderService"
+68-->[androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:25:13-75
+69            android:enabled="false"
+69-->[androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:26:13-36
+70            android:exported="false" >
+70-->[androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:27:13-37
+71            <meta-data
+71-->[androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:30:13-32:89
+72                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+72-->[androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:31:17-103
+73                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+73-->[androidx.camera:camera-camera2:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\4467b0ab1c423d33b935937913854bf5\transformed\camera-camera2-1.3.1\AndroidManifest.xml:32:17-86
+74        </service>
+75
+76        <activity
+76-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+77            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+77-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+78            android:exported="false"
+78-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+79-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\05cbd54a7433aa6c33f587d587666a0e\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+80
+81        <meta-data
+81-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+82            android:name="com.google.android.gms.version"
+82-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+83            android:value="@integer/google_play_services_version" />
+83-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\21e343e85ca6678c0d956c55f0e49f93\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+84
+85        <provider
+85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+87            android:authorities="com.example.cat.androidx-startup"
+87-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+89            <meta-data
+89-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+91                android:value="androidx.startup" />
+91-->[androidx.emoji2:emoji2:1.3.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\788a9ad71086af1b01ff7cb842bfe940\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+93-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+94                android:value="androidx.startup" />
+94-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\106461cf4209bf339cb35ce5eaa8bd39\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+95            <meta-data
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+97                android:value="androidx.startup" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+98        </provider>
+99
+100        <receiver
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+101            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+102            android:directBootAware="false"
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+103            android:enabled="true"
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+104            android:exported="true"
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+105            android:permission="android.permission.DUMP" >
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+107                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+108            </intent-filter>
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+110                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+111            </intent-filter>
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+113                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+114            </intent-filter>
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+116                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\skand\.gradle\caches\9.0-milestone-1\transforms\09edd937045685a57b1b86791d2d1c9b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+117            </intent-filter>
+118        </receiver>
+119    </application>
+120
+121</manifest>
