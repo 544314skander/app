@@ -877,6 +877,7 @@
     <color name="mtrl_textinput_hovered_box_stroke_color">#DE000000</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="notification_tint">#4C6FFF</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -1742,6 +1743,7 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="androidx_compose_ui_view_composition_context" type="id"/>
+    <item name="coil_request_manager" type="id"/>
     <item name="compose_view_saveable_id_tag" type="id"/>
     <item name="consume_window_insets_tag" type="id"/>
     <item name="fragment_container_view_tag" type="id"/>
@@ -1990,6 +1992,7 @@
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="fiets_nl">OpenFietsKaart overlay</string>
     <string name="first_fix_message">Got the first fix</string>
     <string name="format_distance_feet">%s ft</string>
@@ -2003,6 +2006,11 @@
     <string name="format_distance_only_mile">mi</string>
     <string name="format_distance_only_nautical_mile">nm</string>
     <string name="format_distance_value_unit">%1$s %2$s</string>
+    <string name="gcm_defaultSenderId" translatable="false">713025370202</string>
+    <string name="google_api_key" translatable="false">AIzaSyCoCXuNcxwaglDfEHtSrGl3DuircgLrNEk</string>
+    <string name="google_app_id" translatable="false">1:713025370202:android:078293f079ece624968063</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCoCXuNcxwaglDfEHtSrGl3DuircgLrNEk</string>
+    <string name="google_storage_bucket" translatable="false">catproject-4efda.firebasestorage.app</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="hills">Hills</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
@@ -2191,6 +2199,7 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="project_id" translatable="false">catproject-4efda</string>
     <string name="public_transport">Public transport</string>
     <string name="range_end">"Range end"</string>
     <string name="range_start">"Range start"</string>

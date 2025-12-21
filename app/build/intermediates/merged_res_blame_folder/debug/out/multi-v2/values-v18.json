@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.cat.app-mergeDebugResources-71:/values-v18/values-v18.xml",
+            "outputFile": "com.example.cat.app-mergeDebugResources-75:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\66e3130b29697fe51ffc32441df6b5a0\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\41d706096c9bd43c0464ebbf408d27e2\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

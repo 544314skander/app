@@ -20,7 +20,10 @@ import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material.icons.outlined.StarBorder
 import androidx.compose.material.icons.rounded.Favorite
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -29,7 +32,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -40,7 +42,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.cat.data.Cat
-import com.example.cat.ui.theme.DeepBlue
+import com.example.cat.ui.theme.Lilac
+import com.example.cat.ui.theme.Ocean
 
 @Composable
 fun DetailScreen(
@@ -112,9 +115,10 @@ fun DetailScreen(
                 }
             }
 
-            ElevatedCard(
+            Card(
                 modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(16.dp)
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
             ) {
                 Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     Text("Personality Notes", style = MaterialTheme.typography.titleMedium)
@@ -126,16 +130,21 @@ fun DetailScreen(
                 }
             }
 
-            FilledTonalButton(
-                onClick = onToggleFavorite,
-                modifier = Modifier.fillMaxWidth()
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                Icon(
-                    imageVector = if (cat.isFavorite) Icons.Rounded.Favorite else Icons.Outlined.StarBorder,
-                    contentDescription = null
-                )
-                Spacer(modifier = Modifier.size(8.dp))
-                Text(if (cat.isFavorite) "Remove from favorites" else "Mark as favorite cat")
+                FilledTonalButton(
+                    onClick = onToggleFavorite,
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Icon(
+                        imageVector = if (cat.isFavorite) Icons.Rounded.Favorite else Icons.Outlined.StarBorder,
+                        contentDescription = null
+                    )
+                    Spacer(modifier = Modifier.size(8.dp))
+                    Text(if (cat.isFavorite) "Remove from favorites" else "Mark as favorite cat")
+                }
             }
         }
     }
@@ -149,7 +158,7 @@ private fun HeroHeader(cat: Cat) {
             .clip(RoundedCornerShape(18.dp))
             .background(
                 Brush.verticalGradient(
-                    colors = listOf(MaterialTheme.colorScheme.primary, DeepBlue)
+                    colors = listOf(Ocean, Lilac)
                 )
             )
             .padding(18.dp)
@@ -159,7 +168,7 @@ private fun HeroHeader(cat: Cat) {
         ) {
             Box(
                 modifier = Modifier
-                    .size(60.dp)
+                    .size(64.dp)
                     .clip(CircleShape)
                     .background(Color.White.copy(alpha = 0.1f)),
                 contentAlignment = Alignment.Center
@@ -179,7 +188,7 @@ private fun HeroHeader(cat: Cat) {
             Text(
                 text = cat.model,
                 style = MaterialTheme.typography.bodyMedium,
-                color = Color.White.copy(alpha = 0.8f)
+                color = Color.White.copy(alpha = 0.85f)
             )
         }
     }
@@ -190,7 +199,7 @@ private fun StatusBadge(text: String) {
     Box(
         modifier = Modifier
             .clip(RoundedCornerShape(50))
-            .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.1f))
+            .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.12f))
             .padding(horizontal = 10.dp, vertical = 6.dp)
     ) {
         Text(

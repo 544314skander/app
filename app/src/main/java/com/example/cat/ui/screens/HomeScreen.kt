@@ -24,18 +24,19 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.FilterAlt
 import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material.icons.outlined.StarBorder
-import androidx.compose.material.icons.rounded.RocketLaunch
+import androidx.compose.material.icons.rounded.GridView
 import androidx.compose.material.icons.rounded.Map
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -45,11 +46,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import coil.compose.AsyncImage
 import com.example.cat.data.Cat
 import com.example.cat.ui.CatUiState
 import com.example.cat.ui.theme.Amber
-import com.example.cat.ui.theme.DeepBlue
+import com.example.cat.ui.theme.Blush
+import com.example.cat.ui.theme.Lilac
 import com.example.cat.ui.theme.Mist
+import com.example.cat.ui.theme.Ocean
 import com.example.cat.ui.theme.Teal
 
 @Composable
@@ -66,7 +70,12 @@ fun HomeScreen(
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
-                title = { Text(text = "Cat Lounge") },
+                title = {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        Text(text = "Cat Atlas", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                        Text("Curated lounge of explorers", style = MaterialTheme.typography.labelMedium)
+                    }
+                },
                 actions = {
                     IconButton(onClick = onOpenTools) {
                         Icon(
@@ -83,32 +92,37 @@ fun HomeScreen(
                     }
                 },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.9f)
+                    containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.95f)
                 )
             )
         }
     ) { padding ->
-        Column(
+        LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
+                .background(MaterialTheme.colorScheme.background),
+            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp)
         ) {
-            MissionSummaryRow(total = state.cats.size, favorites = favorites)
+            item {
+                HeroSection(
+                    total = state.cats.size,
+                    favorites = favorites,
+                    filtering = state.showOnlyFavorites,
+                    onToggleFilter = onToggleFilter
+                )
+            }
+
             if (visibleCats.isEmpty()) {
-                EmptyState()
+                item { EmptyState() }
             } else {
-                LazyColumn(
-                    modifier = Modifier.fillMaxSize(),
-                    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                    verticalArrangement = Arrangement.spacedBy(12.dp)
-                ) {
-                    items(visibleCats) { cat ->
-                        CatCard(
-                            cat = cat,
-                            onClick = { onCatSelected(cat.id) },
-                            onToggleFavorite = { onToggleFavorite(cat.id) }
-                        )
-                    }
+                items(visibleCats) { cat ->
+                    CatCard(
+                        cat = cat,
+                        onClick = { onCatSelected(cat.id) },
+                        onToggleFavorite = { onToggleFavorite(cat.id) }
+                    )
                 }
             }
         }
@@ -116,43 +130,68 @@ fun HomeScreen(
 }
 
 @Composable
-private fun MissionSummaryRow(total: Int, favorites: Int) {
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 12.dp),
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
-        verticalAlignment = Alignment.CenterVertically
+private fun HeroSection(total: Int, favorites: Int, filtering: Boolean, onToggleFilter: () -> Unit) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(20.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color.Transparent
+        )
     ) {
-        SummaryBox(
-            label = "Cats Lounging",
-            value = "$total",
-            background = Brush.linearGradient(listOf(MaterialTheme.colorScheme.primary, Teal)),
-            modifier = Modifier.weight(1f)
-        )
-        SummaryBox(
-            label = "Favorites",
-            value = "$favorites",
-            background = Brush.linearGradient(listOf(MaterialTheme.colorScheme.tertiary, Amber)),
-            modifier = Modifier.weight(1f)
-        )
+        Box(
+            modifier = Modifier
+                .background(
+                    brush = Brush.linearGradient(
+                        colors = listOf(Ocean, Lilac)
+                    )
+                )
+                .padding(18.dp)
+        ) {
+            Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                Text(
+                    text = "Today in the lounge",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = Color.White.copy(alpha = 0.85f)
+                )
+                Text(
+                    text = "Soft gradients, sleepy cats, and quick access to field tools.",
+                    style = MaterialTheme.typography.titleMedium,
+                    color = Color.White,
+                    fontWeight = FontWeight.Medium
+                )
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    StatPill(label = "All cats", value = total.toString(), background = Color.White.copy(alpha = 0.15f))
+                    StatPill(label = "Favorites", value = favorites.toString(), background = Color.White.copy(alpha = 0.22f))
+                }
+                FilterChip(
+                    selected = filtering,
+                    onClick = onToggleFilter,
+                    label = { Text(if (filtering) "Filtering favorites" else "Showing all cats", color = Color.White) },
+                    leadingIcon = {
+                        Icon(
+                            imageVector = Icons.Rounded.GridView,
+                            contentDescription = null,
+                            tint = Color.White
+                        )
+                    }
+                )
+            }
+        }
     }
 }
 
 @Composable
-private fun SummaryBox(label: String, value: String, background: Brush, modifier: Modifier = Modifier) {
-    Box(
-        modifier = modifier
-            .height(90.dp)
+private fun StatPill(label: String, value: String, background: Color) {
+    Column(
+        modifier = Modifier
             .clip(RoundedCornerShape(14.dp))
             .background(background)
-            .padding(14.dp)
+            .padding(horizontal = 12.dp, vertical = 10.dp)
     ) {
-        Column {
-            Text(text = label, color = Color.White.copy(alpha = 0.8f), style = MaterialTheme.typography.labelMedium)
-            Spacer(modifier = Modifier.weight(1f))
-            Text(text = value, color = Color.White, style = MaterialTheme.typography.headlineMedium)
-        }
+        Text(label, color = Color.White.copy(alpha = 0.85f), style = MaterialTheme.typography.labelMedium)
+        Text(value, color = Color.White, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
     }
 }
 
@@ -166,7 +205,7 @@ private fun CatCard(
         modifier = Modifier
             .fillMaxWidth()
             .clickable(onClick = onClick),
-        shape = RoundedCornerShape(16.dp),
+        shape = RoundedCornerShape(18.dp),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
     ) {
@@ -176,40 +215,59 @@ private fun CatCard(
                 .fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Box(
-                modifier = Modifier
-                    .size(50.dp)
-                    .clip(CircleShape)
-                    .background(
-                        Brush.radialGradient(
-                            colors = listOf(MaterialTheme.colorScheme.primary.copy(alpha = 0.85f), DeepBlue),
-                            radius = 70f
-                        )
-                    ),
-                contentAlignment = Alignment.Center
-            ) {
-                Icon(
-                    imageVector = Icons.Rounded.RocketLaunch,
-                    contentDescription = null,
-                    tint = Color.White
+            if (cat.photoUri != null) {
+                AsyncImage(
+                    model = cat.photoUri,
+                    contentDescription = "Cat photo",
+                    modifier = Modifier
+                        .size(58.dp)
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.surfaceVariant)
                 )
+            } else {
+                Box(
+                    modifier = Modifier
+                        .size(58.dp)
+                        .clip(CircleShape)
+                        .background(
+                            Brush.linearGradient(
+                                colors = listOf(Teal, Blush)
+                            )
+                        ),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = cat.name.firstOrNull()?.uppercase() ?: "?",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
             }
             Spacer(modifier = Modifier.width(12.dp))
-            Column(
-                modifier = Modifier.weight(1f)
-            ) {
-                Text(
-                    text = cat.name,
-                    style = MaterialTheme.typography.titleMedium,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
-                )
+            Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        text = cat.name,
+                        style = MaterialTheme.typography.titleMedium,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    StatusPill(text = cat.status)
+                }
                 Text(
                     text = cat.model,
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
                 )
-                StatusPill(text = cat.status)
+                Text(
+                    text = cat.description,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f),
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis
+                )
             }
             IconButton(onClick = onToggleFavorite) {
                 Icon(
@@ -226,9 +284,8 @@ private fun CatCard(
 private fun StatusPill(text: String) {
     Box(
         modifier = Modifier
-            .padding(top = 8.dp)
             .clip(RoundedCornerShape(50))
-            .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.1f))
+            .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.12f))
             .padding(horizontal = 10.dp, vertical = 6.dp)
     ) {
         Text(
@@ -244,7 +301,7 @@ private fun EmptyState() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(24.dp),
+            .padding(vertical = 40.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -256,10 +313,10 @@ private fun EmptyState() {
             contentAlignment = Alignment.Center
         ) {
             Icon(
-                imageVector = Icons.Rounded.RocketLaunch,
+                imageVector = Icons.Rounded.Map,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.size(64.dp)
+                modifier = Modifier.size(56.dp)
             )
         }
         Spacer(modifier = Modifier.height(12.dp))

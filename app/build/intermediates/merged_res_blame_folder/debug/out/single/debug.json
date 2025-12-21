@@ -1,18 +1,22 @@
 [
     {
-        "merged": "com.example.cat.app-merged_res-73:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.cat.app-main-75:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.cat.app-merged_res-77:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.cat.app-main-79:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.cat.app-merged_res-73:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.cat.app-main-75:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.cat.app-merged_res-77:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.cat.app-main-79:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.cat.app-merged_res-73:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.cat.app-main-75:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.cat.app-merged_res-77:/drawable_ic_notification.xml.flat",
+        "source": "com.example.cat.app-main-79:/drawable/ic_notification.xml"
     },
     {
-        "merged": "com.example.cat.app-merged_res-73:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.cat.app-main-75:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.example.cat.app-merged_res-77:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.cat.app-main-79:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.cat.app-merged_res-77:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.cat.app-main-79:/drawable/ic_launcher_foreground.xml"
     }
 ]

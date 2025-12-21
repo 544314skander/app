@@ -6,5 +6,6 @@ data class Cat(
     val model: String,
     val status: String,
     val description: String,
-    val isFavorite: Boolean = false
+    val isFavorite: Boolean = false,
+    val photoUri: String? = null
 )

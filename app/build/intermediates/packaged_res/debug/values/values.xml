@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="notification_tint">#4C6FFF</color>
     <string name="app_name">Cats Compose</string>
+    <string name="gcm_defaultSenderId" translatable="false">713025370202</string>
+    <string name="google_api_key" translatable="false">AIzaSyCoCXuNcxwaglDfEHtSrGl3DuircgLrNEk</string>
+    <string name="google_app_id" translatable="false">1:713025370202:android:078293f079ece624968063</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCoCXuNcxwaglDfEHtSrGl3DuircgLrNEk</string>
+    <string name="google_storage_bucket" translatable="false">catproject-4efda.firebasestorage.app</string>
+    <string name="project_id" translatable="false">catproject-4efda</string>
     <style name="Theme.CatsCompose" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>

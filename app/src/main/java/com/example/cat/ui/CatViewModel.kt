@@ -79,4 +79,14 @@ class CatViewModel : ViewModel() {
     }
 
     fun getCat(id: Int): Cat? = _uiState.value.cats.firstOrNull { it.id == id }
+
+    fun attachPhoto(id: Int, uri: String) {
+        _uiState.update { state ->
+            state.copy(
+                cats = state.cats.map { cat ->
+                    if (cat.id == id) cat.copy(photoUri = uri) else cat
+                }
+            )
+        }
+    }
 }

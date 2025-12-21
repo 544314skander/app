@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.cat.app-mergeDebugResources-71:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.example.cat.app-mergeDebugResources-75:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\66e3130b29697fe51ffc32441df6b5a0\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\41d706096c9bd43c0464ebbf408d27e2\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\9839218ac57b085a267b2ee4220cab92\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\skand\\.gradle\\caches\\9.0-milestone-1\\transforms\\f097875acae2aebcdfb35afb6ff14ba7\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
